@@ -20,13 +20,15 @@ ggplot(df , aes(x=freq)) + xlim(0,8) + stat_density(geom = "line", position = "i
 #smoothingSpline = smooth.spline(x,y, spar=0.35)
 
 
-par(mar=c(7,7,4,1)+.1, xpd = FALSE)
+par(mar=c(6,7,1,1)+.1, xpd = FALSE)
 plot(y, lwd=2, family = "A",font = 1, cex.lab = 3,cex.main = 3,cex.axis = 2.5,
      main = "",
      xlab="",
      ylab="",
      xlim = c(0,6),
-     ylim = c(0, 0.7))
+     ylim = c(0, 0.7),
+     xaxs = "i",
+     yaxs = "i")        # xaxs and yaxs are set to limit the 2 axis strictly between "zero" lines
 title(xlab = "Blockage of road (m)", family = "A", line = 4.5 , cex.lab=3, family = "A")
 title(ylab="Probability density", family = "A", line = 4.5,cex.lab=3, family = "A")
 
@@ -37,13 +39,15 @@ grid(nx = NULL, ny = NULL,
 
 # Distribution of standing pedestrians
 
-par(mar=c(6,7,7,1)+.1, xpd = FALSE)
+par(mar=c(6,7,1,1)+.1, xpd = FALSE)
 plot(y, lwd=5, family = "A",font = 1, lty = 5, cex.lab = 3,cex.main = 3,cex.axis = 2.5,
      main = "",
      xlab="",
      ylab="",
      xlim = c(0,6),
-     ylim = c(0, 0.7))
+     ylim = c(0, 0.7),
+     xaxs = "i",
+     yaxs = "i")
 title(xlab = "Blockage of road (m)", family = "A", line = 4.5 , cex.lab=3)
 title(ylab="Probability density", family = "A", line = 4.5,cex.lab=3)
 
@@ -59,10 +63,10 @@ curve(
   +0.0070*dnorm(x,mean=5.750,sd=0.40),
   col="red", lwd=2, add=TRUE)
 
-par(mar=c(7,9,4,1)+.1, xpd = TRUE)
-legend(x = "top",          # Position
+par(mar=c(1,3,2,1)+.1, xpd = TRUE)
+legend(x = "topright",          # Position
        legend = c("Probability density", "Fitted curve"),
-       inset = c(-0.3, -0.42),# Legend texts
+       inset = c(0, 0),# Legend texts
        lty = c(2, 1),           # Line types
        col = c(1,2),           # Line colors
        lwd = 2, text.font = 6, cex = 2.3)                 # Line width
@@ -92,13 +96,15 @@ legend(x = "top",          # Position
 #lines(predict(values), col = 'red', lwd = 2)
 
 
-par(mar=c(7,7,4,1)+.1, xpd = FALSE)
+par(mar=c(6,7,1,1)+.1, xpd = FALSE)
 plot(density(dist_parked_car), lwd=2, family = "A",font = 1, cex.lab = 3,cex.main = 3,cex.axis = 2.5,
      main = "",
      xlab="",
      ylab="",
      xlim = c(0,6),
-     ylim = c(0, 0.7))
+     ylim = c(0, 0.7),
+     xaxs = "i",
+     yaxs = "i")
 title(xlab = "Blockage of road (m)", family = "A", line = 4.5 , cex.lab=3)
 title(ylab="Probability density", family = "A", line = 4.5,cex.lab=3)
 
@@ -108,13 +114,15 @@ grid(nx = NULL, ny = NULL,
      lwd = 1.5)
 
 # Distribution of Parked car
-par(mar=c(6,7,7,1)+.1, xpd = FALSE)
+par(mar=c(6,7,1,1)+.1, xpd = FALSE)
 plot(density(dist_parked_car), lwd=4, family = "A",font = 1, lty = 5, cex.lab = 3,cex.main = 3,cex.axis = 2.5,
      main = "",
      xlab="",
      ylab="",
      xlim = c(0,6),
-     ylim = c(0, 0.7))
+     ylim = c(0, 0.7),
+     xaxs = "i",
+     yaxs = "i")
 grid(nx = NULL, ny = NULL,
      lty = 2,      # Grid line type
      col = "black", # Grid line color
@@ -131,13 +139,13 @@ curve(
   +0.010*dnorm(x,mean=5.92,sd=0.310),
   col="red", lwd=2, add=TRUE)
 
-par(mar=c(7,9,4,1)+.1, xpd = TRUE)
-legend(x = "top",          # Position
+par(mar=c(1,3,2,1)+.1, xpd = TRUE)
+legend(x = "topright",          # Position
        legend = c("Probability density", "Fitted curve"),
-       inset = c(-0.3, -0.42),# Legend texts
+       inset = c(0, 0),# Legend texts
        lty = c(2, 1),           # Line types
        col = c(1,2),           # Line colors
-       lwd = 2, text.font = 6, cex = 2.3)                 # Line width
+       lwd = 2, text.font = 6, cex = 2.3)                # Line width
 
 
 # plot(density(dist_parked_car),main="", lwd=2,
@@ -155,13 +163,15 @@ legend(x = "top",          # Position
 
 
 
-par(mar=c(7,7,4,1)+.1, xpd = FALSE)
+par(mar=c(6,7,1,1)+.1, xpd = FALSE)
 plot(density(dist_parked_rck), lwd=2, family = "A",font = 1, cex.lab = 3,cex.main = 3,cex.axis = 2.5,
      main = "",
      xlab="",
      ylab="",
      xlim = c(0,6),
-     ylim = c(0, 0.7))
+     ylim = c(0, 0.7),
+     xaxs = "i",
+     yaxs = "i")
 title(xlab = "Blockage of road (m)", family = "A", line = 4.5 , cex.lab=3)
 title(ylab="Probability density", family = "A", line = 4.5,cex.lab=3)
 grid(nx = NULL, ny = NULL,
@@ -169,13 +179,15 @@ grid(nx = NULL, ny = NULL,
      col = "black", # Grid line color
      lwd = 1.5)
 # Distribution of parked rickshaw
-par(mar=c(6,7,7,1)+.1, xpd = FALSE)
+par(mar=c(6,7,1,1)+.1, xpd = FALSE)
 plot(density(dist_parked_rck), lwd=4, family = "A",font = 1, lty = 5, cex.lab = 3,cex.main = 3,cex.axis = 2.5,
      main = "",
      xlab="",
      ylab="",
      xlim = c(0,6),
-     ylim = c(0, 0.7))
+     ylim = c(0, 0.7),
+     xaxs = "i",
+     yaxs = "i")
 title(xlab = "Blockage of road (m)", family = "A", line = 4.5 , cex.lab=3)
 title(ylab="Probability density", family = "A", line = 4.5,cex.lab=3)
 grid(nx = NULL, ny = NULL,
@@ -191,14 +203,13 @@ curve(
   +0.009*dnorm(x,mean=5.88,sd=0.380),
   col="red", lwd=2, add=TRUE)
 
-par(mar=c(7,9,4,1)+.1, xpd = TRUE)
-legend(x = "top",          # Position
+par(mar=c(1,3,2,1)+.1, xpd = TRUE)
+legend(x = "topright",          # Position
        legend = c("Probability density", "Fitted curve"),
-       inset = c(-0.3, -0.42),# Legend texts
+       inset = c(0, 0),# Legend texts
        lty = c(2, 1),           # Line types
        col = c(1,2),           # Line colors
-       lwd = 2, text.font = 6, cex = 2.3)                 # Line width
-
+       lwd = 2, text.font = 6, cex = 2.3)  
 
 # plot(density(dist_parked_rck),main="", lwd=2,
 #      xlab="Blockage of Road (m)",
@@ -213,13 +224,15 @@ legend(x = "top",          # Position
 #   col="red", lwd=2, add=TRUE)
 
 
-par(mar=c(7,7,4,1)+.1, xpd = FALSE)
+par(mar=c(6,7,1,1)+.1, xpd = FALSE)
 plot(density(dist_parked_cng), lwd=2, family = "A",font = 1, cex.lab = 3,cex.main = 3,cex.axis = 2.5,
      main = "",
      xlab="",
      ylab="",
      xlim = c(0,6),
-     ylim = c(0, 0.7))
+     ylim = c(0, 0.7),
+     xaxs = "i",
+     yaxs = "i")
 title(xlab = "Blockage of road (m)", family = "A", line = 4.5 , cex.lab=3)
 title(ylab="Probability density", family = "A", line = 4.5,cex.lab=3)
 grid(nx = NULL, ny = NULL,
@@ -227,13 +240,15 @@ grid(nx = NULL, ny = NULL,
      col = "black", # Grid line color
      lwd = 1.5)
 # Distribution of standing pedestrians
-par(mar=c(6,7,7,1)+.1, xpd = FALSE)
+par(mar=c(6,7,1,1)+.1, xpd = FALSE)
 plot(density(dist_parked_cng), lwd=4, family = "A",font = 1, lty = 5, cex.lab = 3,cex.main = 3,cex.axis = 2.5,
      main = "",
      xlab="",
      ylab="",
      xlim = c(0,6),
-     ylim = c(0, 0.7))
+     ylim = c(0, 0.7),
+     xaxs = "i",
+     yaxs = "i")
 title(xlab = "Blockage of road (m)", family = "A", line = 4.5 , cex.lab=3)
 title(ylab="Probability density", family = "A", line = 4.5,cex.lab=3)
 grid(nx = NULL, ny = NULL,
@@ -249,14 +264,13 @@ curve(
   +0.015*dnorm(x,mean=4.65,sd=0.32),
   col="red", lwd=2, add=TRUE)
 
-par(mar=c(7,9,4,1)+.1, xpd = TRUE)
-legend(x = "top",          # Position
+par(mar=c(1,3,2,1)+.1, xpd = TRUE)
+legend(x = "topright",          # Position
        legend = c("Probability density", "Fitted curve"),
-       inset = c(-0.3, -0.42),# Legend texts
+       inset = c(0, 0),# Legend texts
        lty = c(2, 1),           # Line types
        col = c(1,2),           # Line colors
-       lwd = 2, text.font = 6, cex = 2.3)                 # Line width
-
+       lwd = 2, text.font = 6, cex = 2.3)  
 
 # plot(density(dist_parked_cng),main="", lwd=2,
 #      xlab="Blockage of Road (m)",
