@@ -31,7 +31,7 @@ plot(y, lwd=2, family = "A",font = 1, cex.lab = 3,cex.main = 3,cex.axis = 2.5,
      yaxs = "i")        # xaxs and yaxs are set to limit the 2 axis strictly between "zero" lines
 title(xlab = "Blockage of road (m)", family = "A", line = 4.5 , cex.lab=3, family = "A")
 title(ylab="Probability density", family = "A", line = 4.5,cex.lab=3, family = "A")
-
+abline(h = 0)           # without this line, x axis appear gridded (density func is spooky. using ggplot is recommended)
 grid(nx = NULL, ny = NULL,
      lty = 2,      # Grid line type
      col = "black", # Grid line color
@@ -51,6 +51,7 @@ plot(y, lwd=5, family = "A",font = 1, lty = 5, cex.lab = 3,cex.main = 3,cex.axis
 title(xlab = "Blockage of road (m)", family = "A", line = 4.5 , cex.lab=3)
 title(ylab="Probability density", family = "A", line = 4.5,cex.lab=3)
 
+abline(h = 0)           # without this line, x axis appear gridded (density func is spooky. using ggplot is recommended)
 grid(nx = NULL, ny = NULL,
      lty = 2,      # Grid line type
      col = "black", # Grid line color
@@ -108,6 +109,7 @@ plot(density(dist_parked_car), lwd=2, family = "A",font = 1, cex.lab = 3,cex.mai
 title(xlab = "Blockage of road (m)", family = "A", line = 4.5 , cex.lab=3)
 title(ylab="Probability density", family = "A", line = 4.5,cex.lab=3)
 
+abline(h = 0)           # without this line, x axis appear gridded (density func is spooky. using ggplot is recommended)
 grid(nx = NULL, ny = NULL,
      lty = 2,      # Grid line type
      col = "black", # Grid line color
@@ -123,6 +125,8 @@ plot(density(dist_parked_car), lwd=4, family = "A",font = 1, lty = 5, cex.lab = 
      ylim = c(0, 0.7),
      xaxs = "i",
      yaxs = "i")
+
+abline(h = 0)           # without this line, x axis appear gridded (density func is spooky. using ggplot is recommended)
 grid(nx = NULL, ny = NULL,
      lty = 2,      # Grid line type
      col = "black", # Grid line color
@@ -174,10 +178,14 @@ plot(density(dist_parked_rck), lwd=2, family = "A",font = 1, cex.lab = 3,cex.mai
      yaxs = "i")
 title(xlab = "Blockage of road (m)", family = "A", line = 4.5 , cex.lab=3)
 title(ylab="Probability density", family = "A", line = 4.5,cex.lab=3)
+
+abline(h = 0)           # without this line, x axis appear gridded (density func is spooky. using ggplot is recommended)
 grid(nx = NULL, ny = NULL,
      lty = 2,      # Grid line type
      col = "black", # Grid line color
      lwd = 1.5)
+
+
 # Distribution of parked rickshaw
 par(mar=c(6,7,1,1)+.1, xpd = FALSE)
 plot(density(dist_parked_rck), lwd=4, family = "A",font = 1, lty = 5, cex.lab = 3,cex.main = 3,cex.axis = 2.5,
@@ -190,6 +198,8 @@ plot(density(dist_parked_rck), lwd=4, family = "A",font = 1, lty = 5, cex.lab = 
      yaxs = "i")
 title(xlab = "Blockage of road (m)", family = "A", line = 4.5 , cex.lab=3)
 title(ylab="Probability density", family = "A", line = 4.5,cex.lab=3)
+
+abline(h = 0)           # without this line, x axis appear gridded (density func is spooky. using ggplot is recommended)
 grid(nx = NULL, ny = NULL,
      lty = 2,      # Grid line type
      col = "black", # Grid line color
@@ -235,10 +245,14 @@ plot(density(dist_parked_cng), lwd=2, family = "A",font = 1, cex.lab = 3,cex.mai
      yaxs = "i")
 title(xlab = "Blockage of road (m)", family = "A", line = 4.5 , cex.lab=3)
 title(ylab="Probability density", family = "A", line = 4.5,cex.lab=3)
+
+abline(h = 0)           # without this line, x axis appear gridded (density func is spooky. using ggplot is recommended)
 grid(nx = NULL, ny = NULL,
      lty = 2,      # Grid line type
      col = "black", # Grid line color
      lwd = 1.5)
+
+
 # Distribution of standing pedestrians
 par(mar=c(6,7,1,1)+.1, xpd = FALSE)
 plot(density(dist_parked_cng), lwd=4, family = "A",font = 1, lty = 5, cex.lab = 3,cex.main = 3,cex.axis = 2.5,
@@ -251,6 +265,8 @@ plot(density(dist_parked_cng), lwd=4, family = "A",font = 1, lty = 5, cex.lab = 
      yaxs = "i")
 title(xlab = "Blockage of road (m)", family = "A", line = 4.5 , cex.lab=3)
 title(ylab="Probability density", family = "A", line = 4.5,cex.lab=3)
+
+abline(h = 0)           # without this line, x axis appear gridded (density func is spooky. using ggplot is recommended)
 grid(nx = NULL, ny = NULL,
      lty = 2,      # Grid line type
      col = "black", # Grid line color
