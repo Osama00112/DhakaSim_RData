@@ -277,16 +277,21 @@ grid(nx = NULL, ny = NULL,
 #   +0.0070*dnorm(x,mean=5.750,sd=0.40),
 #   col="red", lwd=2, add=TRUE)
 
-curve(curve_function(x, dist_walk_ped, 4), col = "blue", lwd = 2, add = TRUE)
+#curve(curve_function(x, dist_walk_ped, 4), col = "blue", lwd = 2, add = TRUE)
 curve(curve_function(x, dist_walk_ped, 2), col = "red", lwd = 2, add = TRUE)
-curve(curve_function(x, dist_stndng_ped, 5), col = "red", lwd = 2, add = TRUE)
+#curve(curve_function(x, dist_stndng_ped, 5), col = "red", lwd = 2, add = TRUE)
+
 plot_gmm(dist_stndng_ped, 5)
 plot_gmm(dist_parked_car, 6)
 plot_gmm(dist_parked_rck, 5)
 plot_gmm(dist_parked_cng, 4)
 plot_gmm(dist_walk_ped, 5)
 
-
+plot_gmm(dist_stndng_ped)
+plot_gmm(dist_parked_car)
+plot_gmm(dist_parked_rck)
+plot_gmm(dist_parked_cng)
+plot_gmm(dist_walk_ped)
 
 
 par(mar=c(1,3,2,1)+.1, xpd = TRUE)
@@ -520,7 +525,7 @@ legend(x = "topright",          # Position
 
 # Distribution of walk
 par(mar=c(6,7,1,1)+.1, xpd = FALSE)
-plot(density(dist_walk_ped), lwd=4, family = "A",font = 1, lty = 5, cex.lab = 3,cex.main = 3,cex.axis = 2.5,
+plot(density(dist_walk_ped), lwd=2, family = "A",font = 1, cex.lab = 3,cex.main = 3,cex.axis = 2,
      main = "",
      xlab="",
      ylab="",
@@ -528,8 +533,32 @@ plot(density(dist_walk_ped), lwd=4, family = "A",font = 1, lty = 5, cex.lab = 3,
      ylim = c(0, 0.7),
      xaxs = "i",
      yaxs = "i")
-title(xlab = "Blockage of road (m)", family = "A", line = 4.5 , cex.lab=3)
-title(ylab="Probability density", family = "A", line = 4.5,cex.lab=3)
+title(xlab = "Blockage of road (m)", family = "A", line = 4.5 , cex.lab=2.5)
+title(ylab="Probability density", family = "A", line = 4.5,cex.lab=2.5)
+
+abline(h = 0)           # without this line, x axis appear gridded (density func is spooky. using ggplot is recommended)
+grid(nx = NULL, ny = NULL,
+     lty = 2,      # Grid line type
+     col = "black", # Grid line color
+     lwd = 1.5)
+
+
+
+
+
+
+
+par(mar=c(6,7,1,1)+.1, xpd = FALSE)
+plot(density(dist_walk_ped), lwd=4, family = "A",font = 1, lty = 5, cex.lab = 3,cex.main = 3,cex.axis = 2,
+     main = "",
+     xlab="",
+     ylab="",
+     xlim = c(0,6),
+     ylim = c(0, 0.7),
+     xaxs = "i",
+     yaxs = "i")
+title(xlab = "Blockage of road (m)", family = "A", line = 4.5 , cex.lab=2.5)
+title(ylab="Probability density", family = "A", line = 4.5,cex.lab=2.5)
 
 abline(h = 0)           # without this line, x axis appear gridded (density func is spooky. using ggplot is recommended)
 grid(nx = NULL, ny = NULL,
@@ -563,6 +592,60 @@ legend(x = "topright",          # Position
        lwd = 2, text.font = 6, cex = 2.3)  
 
 
+
+library(ggplot2)
+
+# Create a density data frame
+density_data <- data.frame(
+  x = density(dist_walk_ped)$x,
+  y = density(dist_walk_ped)$y
+)
+
+# Define the fitted curve function
+fitted_curve <- function(x) {
+  0.213 * dnorm(x, mean = 1.13, sd = 0.532) +
+    0.304 * dnorm(x, mean = 1.56, sd = 0.465) +
+    0.215 * dnorm(x, mean = 2.54, sd = 0.396) +
+    0.152 * dnorm(x, mean = 3.67, sd = 0.397) +
+    0.116 * dnorm(x, mean = 5.05, sd = 1.332)
+}
+
+# Create a data frame for the fitted curve
+fitted_data <- data.frame(
+  x = seq(0, 6, length.out = 1000),
+  y = fitted_curve(seq(0, 6, length.out = 1000))
+)
+
+# Plot using ggplot2
+ggplot() +
+  # Add the density line
+  geom_line(data = density_data, aes(x = x, y = y), size = 1, linetype = "dashed", color = "black") +
+  # Add the fitted curve line
+  geom_line(data = fitted_data, aes(x = x, y = y), size = 1, color = "red") +
+  # Add grid lines
+  theme_minimal(base_family = "A") +
+  theme(
+    axis.text = element_text(size = 14),
+    axis.title = element_text(size = 16),
+    plot.title = element_text(size = 18, hjust = 0.5),
+    panel.grid.major = element_line(linetype = "dotted", color = "gray70"),
+    panel.grid.minor = element_blank(),
+    plot.margin = margin(30, 30, 10, 10)
+  ) +
+  # Add titles and labels
+  labs(
+    x = "Blockage of road (m)",
+    y = "Probability density",
+    title = ""
+  ) +
+  # Custom axis limits
+  coord_cartesian(xlim = c(0, 6), ylim = c(0, 0.7), expand = FALSE) +
+  # Add legend
+  scale_color_manual(
+    values = c("black", "red"),
+    labels = c("Probability density", "Fitted curve"),
+    name = ""
+  )
 
 
 

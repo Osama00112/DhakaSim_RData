@@ -1,0 +1,201 @@
+density,type,speed,time
+high,No side friction,4.485283076,75.99643046
+high,No side friction,4.474149091,79.82783139
+high,No side friction,4.446880401,78.54399073
+high,No side friction,4.428480984,80.11795729
+high,No side friction,4.460920743,75.53994349
+high,No side friction,4.30967369,87.63270021
+high,No side friction,4.288275125,86.90697674
+high,No side friction,4.460158131,79.18353388
+high,No side friction,4.561570994,75.50013055
+high,No side friction,4.474149091,79.82783139
+high,Only roadside objects (3 types),4.117855139,85.67036612
+high,Only roadside objects (3 types),4.040792236,94.78910526
+high,Only roadside objects (3 types),4.040792236,94.78910526
+high,Only roadside objects (3 types),4.177301272,85.96824368
+high,Only roadside objects (3 types),4.237387728,80.80874808
+high,Only roadside objects (3 types),4.017661819,96.33792049
+high,Only roadside objects (3 types),4.020239551,92.53368543
+high,Only roadside objects (3 types),4.025705119,94.79745078
+high,Only roadside objects (3 types),3.972593187,98.00164891
+high,Only roadside objects (3 types),4.181882901,86.16982848
+high,Rickshaw,4.201643111,86.4212805
+high,Rickshaw,4.319571491,80.71415748
+high,Rickshaw,4.320018215,78.47567917
+high,Rickshaw,4.264275366,81.59889241
+high,Rickshaw,4.255314333,83.06014651
+high,Rickshaw,4.178048634,87.78432377
+high,Rickshaw,4.34294346,77.64816941
+high,Rickshaw,4.359327534,78.36327972
+high,Rickshaw,4.292883055,79.79728227
+high,Rickshaw,4.254169085,84.83886744
+high,Car,4.051265657,94.28435834
+high,Car,4.383286375,78.14741088
+high,Car,4.07525362,116.7310542
+high,Car,4.263315799,83.58763151
+high,Car,4.061363787,96.40917806
+high,Car,4.354307961,79.81790652
+high,Car,4.362699954,78.29213195
+high,Car,4.347288849,77.95352751
+high,Car,4.294889088,82.49351492
+high,Car,4.182327369,87.70260603
+high,CNG,4.229111795,87.88280657
+high,CNG,4.29571482,85.23310203
+high,CNG,4.381586709,78.36972959
+high,CNG,4.440306797,75.00335917
+high,CNG,4.280983814,84.34875583
+high,CNG,4.350437617,77.70938275
+high,CNG,4.37535525,79.78508885
+high,CNG,4.395152337,77.66692239
+high,CNG,4.223662333,84.49651703
+high,CNG,4.292082559,80.5574518
+high,Only pedestrian (3 types),2.965920957,204.3481345
+high,Only pedestrian (3 types),3.058691458,178.3636482
+high,Only pedestrian (3 types),2.929647957,199.3648208
+high,Only pedestrian (3 types),3.15074559,163.9121444
+high,Only pedestrian (3 types),3.094230674,185.8854701
+high,Only pedestrian (3 types),2.957636805,187.4585142
+high,Only pedestrian (3 types),2.922383891,196.2678923
+high,Only pedestrian (3 types),2.898247109,195.6651394
+high,Only pedestrian (3 types),3.192636162,170.4235187
+high,Only pedestrian (3 types),2.966254141,186.9998692
+high,Standing pedestrian,4.471703736,76.61634221
+high,Standing pedestrian,4.291363971,82.42134685
+high,Standing pedestrian,4.384684138,76.57003891
+high,Standing pedestrian,4.330748852,80.07403689
+high,Standing pedestrian,4.329646035,81.80599511
+high,Standing pedestrian,4.42994652,76.21262853
+high,Standing pedestrian,4.364533359,77.4884575
+high,Standing pedestrian,4.375117018,78.21327014
+high,Standing pedestrian,4.446565491,76.09827409
+high,Standing pedestrian,4.372682308,78.07312049
+high,Road crossing pedestrian,3.578199721,128.3892177
+high,Road crossing pedestrian,3.580206692,127.0113252
+high,Road crossing pedestrian,3.702670798,118.5605451
+high,Road crossing pedestrian,3.399336493,149.4229013
+high,Road crossing pedestrian,3.315167278,153.8204234
+high,Road crossing pedestrian,3.625195426,124.4485397
+high,Road crossing pedestrian,3.379794964,150.8721805
+high,Road crossing pedestrian,3.676453277,128.7701297
+high,Road crossing pedestrian,3.586523808,133.3548511
+high,Road crossing pedestrian,3.504651058,129.2381135
+high,Pedestrian along the road,4.394405815,82.17679778
+high,Pedestrian along the road,4.159427701,90.13415265
+high,Pedestrian along the road,4.202815244,93.50365713
+high,Pedestrian along the road,4.127047937,99.15835252
+high,Pedestrian along the road,4.166211054,94.83484927
+high,Pedestrian along the road,4.024700437,101.6291031
+high,Pedestrian along the road,4.327700266,85.88803741
+high,Pedestrian along the road,4.191824678,93.88846496
+high,Pedestrian along the road,4.194813474,95.04462288
+high,Pedestrian along the road,4.017470202,102.9357152
+high,All side friction,2.897431553,198.892909
+high,All side friction,2.618635361,258.2945464
+high,All side friction,2.924891523,195.9845354
+high,All side friction,3.066782554,177.2401093
+high,All side friction,2.660228802,224.49782
+high,All side friction,2.662198851,217.4446322
+high,All side friction,2.87802577,183.171451
+high,All side friction,2.924953041,195.7326668
+high,All side friction,2.924953041,195.7326668
+high,All side friction,2.605881945,240.9828835
+moderate,No side friction,4.9629323,46.74321622
+moderate,No side friction,4.901887424,45.59690844
+moderate,No side friction,4.906222117,47.58163265
+moderate,No side friction,4.952082874,49.02900976
+moderate,No side friction,4.906222117,47.58163265
+moderate,No side friction,4.933922821,45.26586369
+moderate,No side friction,4.878416903,48.98473282
+moderate,No side friction,4.921478632,48.44609241
+moderate,No side friction,4.901103315,47.32464524
+moderate,No side friction,4.897085882,48.41928123
+moderate,Only roadside objects (3 types),4.834137094,51.68437589
+moderate,Only roadside objects (3 types),4.893652954,48.51704383
+moderate,Only roadside objects (3 types),4.786930836,51.18654607
+moderate,Only roadside objects (3 types),4.866945047,50.18880094
+moderate,Only roadside objects (3 types),4.761308779,51.45454545
+moderate,Only roadside objects (3 types),4.827190143,52.54243119
+moderate,Only roadside objects (3 types),4.869311503,53.32217454
+moderate,Only roadside objects (3 types),4.789898018,49.78977104
+moderate,Only roadside objects (3 types),4.84633217,50.856065
+moderate,Only roadside objects (3 types),4.739606866,53.74502452
+moderate,Rickshaw,4.866141828,47.72862998
+moderate,Rickshaw,4.788978527,52.30524182
+moderate,Rickshaw,4.861443833,50.41485714
+moderate,Rickshaw,4.842437302,48.39522005
+moderate,Rickshaw,4.850304976,49.807592
+moderate,Rickshaw,4.862499326,47.1768648
+moderate,Rickshaw,4.800718038,49.75931232
+moderate,Rickshaw,4.887893222,49.15668203
+moderate,Rickshaw,4.91283185,49.82461103
+moderate,Rickshaw,4.904041227,47.95938497
+moderate,Car,4.869581239,49.31004367
+moderate,Car,4.813033899,47.10974178
+moderate,Car,4.915923614,48.39079137
+moderate,Car,4.836410115,51.20869051
+moderate,Car,4.78882398,50.42954009
+moderate,Car,4.841903547,51.72288111
+moderate,Car,4.830497153,49.19326756
+moderate,Car,4.857159396,47.99645704
+moderate,Car,4.775597578,49.97582811
+moderate,Car,4.892170505,48.20695505
+moderate,CNG,4.935455374,48.66530612
+moderate,CNG,4.939740191,49.48917268
+moderate,CNG,4.895527749,48.99886782
+moderate,CNG,4.766834188,50.13079096
+moderate,CNG,4.933554563,47.94932811
+moderate,CNG,4.843754324,49.76655348
+moderate,CNG,4.847257418,49.84571753
+moderate,CNG,4.850400555,49.74434524
+moderate,CNG,4.807521579,50.249638
+moderate,CNG,4.887945084,47.35600116
+moderate,Only pedestrian (3 types),4.686886414,54.83994253
+moderate,Only pedestrian (3 types),4.661645876,51.90212892
+moderate,Only pedestrian (3 types),4.767453062,53.01034186
+moderate,Only pedestrian (3 types),4.793552237,52.6123157
+moderate,Only pedestrian (3 types),4.712952814,54.26455331
+moderate,Only pedestrian (3 types),4.62287332,55.69668508
+moderate,Only pedestrian (3 types),4.738354733,54.06802342
+moderate,Only pedestrian (3 types),4.641150699,54.97106584
+moderate,Only pedestrian (3 types),4.782034013,52.30063291
+moderate,Only pedestrian (3 types),4.730122974,55.12273524
+moderate,Standing pedestrian,4.846832705,48.54344709
+moderate,Standing pedestrian,4.878659393,50.53903016
+moderate,Standing pedestrian,4.824297208,51.15492154
+moderate,Standing pedestrian,4.81549065,50.65284091
+moderate,Standing pedestrian,4.939552887,49.94687232
+moderate,Standing pedestrian,4.946911113,47.57227664
+moderate,Standing pedestrian,4.889684763,46.73945558
+moderate,Standing pedestrian,4.933716626,47.08873821
+moderate,Standing pedestrian,4.882730009,46.95300261
+moderate,Standing pedestrian,4.938302817,46.44609125
+moderate,Road crossing pedestrian,4.854372444,49.11395683
+moderate,Road crossing pedestrian,4.797730662,51.63740349
+moderate,Road crossing pedestrian,4.775028272,52.07091793
+moderate,Road crossing pedestrian,4.736897637,51.1823411
+moderate,Road crossing pedestrian,4.737469686,53.32510638
+moderate,Road crossing pedestrian,4.799097902,50.74963737
+moderate,Road crossing pedestrian,4.820540478,50.52272078
+moderate,Road crossing pedestrian,4.794865832,50.28686404
+moderate,Road crossing pedestrian,4.742244053,52.49914579
+moderate,Road crossing pedestrian,4.846196056,50.14503817
+moderate,Pedestrian along the road,4.920180355,49.63501568
+moderate,Pedestrian along the road,4.829990963,50.64356436
+moderate,Pedestrian along the road,5.007524275,48.76373302
+moderate,Pedestrian along the road,4.791971977,50.66321098
+moderate,Pedestrian along the road,4.840406271,49.62482004
+moderate,Pedestrian along the road,4.875271879,49.86662867
+moderate,Pedestrian along the road,4.900526236,52.50378788
+moderate,Pedestrian along the road,4.850875016,49.05588652
+moderate,Pedestrian along the road,4.89988524,50.96024376
+moderate,Pedestrian along the road,4.776429723,49.75851852
+moderate,All side friction,4.63201705,55.6520251
+moderate,All side friction,4.624187131,57.6430603
+moderate,All side friction,4.709671704,55.65054379
+moderate,All side friction,4.604734234,54.65766033
+moderate,All side friction,4.621260818,56.62769679
+moderate,All side friction,4.664644757,54.53680634
+moderate,All side friction,4.688741324,54.60788382
+moderate,All side friction,4.651868753,55.22428282
+moderate,All side friction,4.689282837,54.49828473
+moderate,All side friction,4.653614938,55.19959851
